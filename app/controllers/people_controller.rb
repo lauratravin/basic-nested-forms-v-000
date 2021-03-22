@@ -1,7 +1,7 @@
 class PeopleController < ApplicationController
   def new
     @person = Person.new
-    @person.addresses.build(address_type: 'work')
+    @person.addresses.build(address_type: 'work')  #this will give the number of addres in the fields_for in the new person form
     @person.addresses.build(address_type: 'home')
   end
 
